@@ -1,0 +1,35 @@
+ #include <stdio.h>
+
+int main(void) {
+	// your code goes here
+	int x=39993;
+bool b;
+bool m1(int);
+b=m1(x);
+if(b==true)
+{
+	printf("palindrom");
+}
+	
+	
+	
+	return 0;
+}
+bool  m1(int x)
+{ 
+	int ol=x,temp=0;
+	while(x/10!=0)
+	{
+		temp=temp*10+x%10;
+		x=x/10;
+
+
+
+	}
+	temp=temp*10+x;
+	if(0l==temp)
+	{
+		return true;
+	}
+
+}
