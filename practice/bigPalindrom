@@ -1,0 +1,40 @@
+ 
+int i,j,product;
+int big=0;
+boolean m1(int);
+ 
+for(int i=100;i<500;i++)
+{
+	for(int j=100;j<999;j++)
+
+	{
+		product=i*j;
+	}
+	 big=(m1(product)>big)?:product:big;
+
+
+}
+
+printf("the big palindrom is %d", big);
+
+boolean m1(int x)
+{ 
+	int ol=x,temp=0;
+	while(x/10!=0)
+	{
+		temp=temp*10+x%10;
+		x=x/10;
+
+
+
+	}
+	temp=temp*10+x;
+	if(0l==temp)
+	{
+		return true;
+	}
+
+
+
+
+}
